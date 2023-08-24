@@ -14,8 +14,8 @@ Sport Snow ofrece en forma de ecommerce ropa deportiva especificamente de invier
 
 # Links de referencia
 
-- https://www.mercadolibre.com.ar/ - Referente de como hacer un carro sencillo y práctico.
-- https://www.jumbo.com.ar/ - Referente de diseño.
+- https://salomonstore.com.ar/ - Referente de como hacer un carro sencillo y práctico.
+- https://www.montagne.com.ar/ - Referente de diseño.
 - https://www.aliexpress.com/ - Referente de Sing in y Sing out dinámico.
 - https://webdesign.tutsplus.com/ - Referente de como hacer un buen wireframe.
 - https://developer.mozilla.org/ - Referente principal de programación BackEnd
