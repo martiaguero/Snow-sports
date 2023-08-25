@@ -1,4 +1,4 @@
-# Sports Snow - modificacion de ejemplo editando desde github al repositorio local
+# Sports Snow 
 
 Sport Snow ofrece en forma de ecommerce ropa deportiva especificamente de invierno de primera calidad, teniendo una amplia gama de productos: desde ropa para los mas chicos para competicion hasta accesorios para camping outdoor, siempre pensando en las alternativas mas económicas y accesibles para los usuarios. Esta orientado al consumidor final que quiere unificar sus compras, adquiriendo marca, calidad y bajos precios.
 
