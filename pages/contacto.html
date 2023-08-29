@@ -1,5 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+
+  /* Tamaño uniforme del campo de texto */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #000;
+}
+
+textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+
+  /* Proporcionar espacio para escribir texto */
+  height: 5em;
+}
+
+.button {
+  /* Alinear los botones con los campos de texto */
+  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+}
+
+button {
+  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+     entre las etiquetas y sus campos de texto */
+  margin-left: 0.5em;
+}
+
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,26 +125,29 @@
         <form action="" method="get" class="form-register">
             <div align=center class="form-register">
                 <button>
-                    <input type="text" name="name" id="name" required id="Nombre" placeholder="Ingresar Nombre" /> 
+                    <input type="text" name="name" id="name" required id="Nombre" placeholder="Nombre" /> 
                 </button>
             </div>
             <div align=center class="form-register">
                 <button>
-                <input type="text" name="name" id="name" required id="Apellido" placeholder="Ingresar Apellido"/> 
+                <input type="text" name="name" id="name" required id="Apellido" placeholder="Apellido"/> 
                 </button>
             </div>
             <div align=center class="form-register">
                 <button>
-                    <input type="email" name="email" id="email" required id="Email" placeholder="Ingresar Mail Valido"/>
+                    <input type="email" name="email" id="email" required id="Email" placeholder="Correo electrónico"/>
                 </button>
             </div>
             <div align=center class="form-register">
                 <button>
-                    <input type="text" name="Comentarios" id="Comentarios" required id="Comentarios" placeholder="Comentarios" /> 
+                    <input type="text" name="Comentarios" id="Comentarios" required id="Comentarios" placeholder="Mensaje" /> 
                 </button>
             </div>
         <br>
-           
+        
+        <div>              
+        </div>
+
         </form>
     
             <div align=center>
