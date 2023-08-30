@@ -8,12 +8,12 @@
 
 body {
     text-align: center;
-    font-family: sans-serif;  
+    font-family: sans-serif;
 }
 
 
 .head {
-    display: flex;
+    display: flex;  
     align-items: center;
     justify-content: space-between;
     height: 63px;
@@ -23,7 +23,7 @@ body {
     z-index: 100;
 }
 
-.header {
+.navbar {
     display: flex;
     margin-right: 10px;
 }
@@ -31,7 +31,6 @@ body {
 .logo {
     margin-left: 30px;
 }
-
 
 .logo a {
     text-decoration: none;
@@ -42,7 +41,7 @@ body {
 
 .navbar a {
     display: block;
-    padding: 23px 20px;
+    padding: 20px 20px;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -61,7 +60,7 @@ body {
 
 .header {
     height: 60vh !important;
-    background: url(/assets/media/images/header.jpg);
+    background: url(/assets/media/images/header.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -73,10 +72,11 @@ body {
     color: white;
 }
 
-p {
+.p {
     margin-bottom: 40px;
     font-size: 18px;
     color: white;
+    padding: 0 100px;
 }
 
 .btn {
@@ -89,11 +89,15 @@ p {
     background: #9c27b0;
 }
 
-.btn-home {    
-    display: flex;
+.btn:hover {
+    background: none;
 }
 
 .btn-home {
+    display: flex;
+}
+
+.btn-home a {
     margin: 0 10px;
 }
 
@@ -124,9 +128,59 @@ p {
     background: #101010;
     text-align: center;
     border-radius: 1rem;
-    
+    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
+    margin: 2rem;
+}
 
+.box-container .box i{
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background: #9c27b0;
+    margin: 1rem ;
+}
 
+.box-container .box h3 {
+    font-size: 30px;
+    color: #9c27b0;
+}
 
+.box-container .box p {
+    font-size: 16px;
+}
+
+.about {
+    background: #171717;
+}
+
+.price {
+    background: url(/assets/media/images/costos.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.contacto {
+    padding-top: 20px;
+    background: #171717;
+    padding-bottom: 0;
+}
+
+@media  (max-width: 768px) {
+   
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    .sau {
+        height: 120vh;
+    }
+
+    .navbar{
+        display: none;
+    }
 
 }
