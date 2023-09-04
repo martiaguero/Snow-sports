@@ -1,6 +1,7 @@
 /*Todos los estilos para la pagina de quienes somos*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap');
 
-/*Estilos para el Banner*/
+/*Creación deñ Banner y el menu*/
 
 *{
     margin: 0;
@@ -60,7 +61,7 @@ header ul li a{
 .banner{
     width: 100%;
     min-height: 100vh;
-    background: url(images/alpessuizo.png);
+    background: url(/assets/media/images/alpessuizo.png);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +81,7 @@ header ul li a{
 .banner h2 span{
     color: #4978ff 
 }
-
+/*estilos para la sección Quiénes somos y Botón.*/
 .sec{
     background: #fff;
     padding: 100px;
@@ -160,3 +161,109 @@ p{
   text-transform: uppercase;
   font-weight: 700;
 }
+/*Estilos para sección* con márgenes negativos*/
+
+.stats{
+    background: #000;
+    padding-top: 250px;
+    margin-top: -250px;
+}
+
+.stats h3,
+.stats p 
+{
+    color: #fff;
+}
+
+.statsBox{
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      grid-gap: 20px;
+      max-width: 100%;
+}
+
+.statsBox h2{
+    color: #fff;
+    font-size: 36px;
+}
+
+.statsBox h4{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/*Estilo para mostrar y ocultar una caja utilizando opacity*/
+
+.teamBx{
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 20px;
+  max-width: 100%;
+  margin-top: 40px;
+
+}
+
+.teamBx .member{
+    position: relative;
+    background: #000;
+    min-height: 300px;
+    width: 250px;
+    margin: 0  auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teamBx .member .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.teamBx  .member .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teamBx .member .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.teamBx .member .details:hover{
+    opacity: 1;
+}
+
+.teamBx .member .details  h2{
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 20px;
+   letter-spacing: 1px;
+}
+
+.teamBx .member .details  h2 span{
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+
