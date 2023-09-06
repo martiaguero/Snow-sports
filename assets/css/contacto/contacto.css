@@ -1,0 +1,33 @@
+@import url(/assets/css/contacto/header.css);
+@import url(/assets/css/contacto/main.css);
+@import url(/assets/css/contacto/footer.css);
+
+
+*,html{font-family:'Times New Roman', Times, serif;
+}
+
+
+
+
+head img { width: 100px;}
+
+body { background-color: #9c27b0;}
+
+
+
+p h1 {
+    margin: auto;
+    width: 500px;
+    padding: 1em;
+    border-radius: 1em;
+    border: 1 px solid black;
+
+}
+
+input,
+textarea > input {   
+            width: 500px;
+            box-sizing: border-box;
+            border: 1px solid #000000;
+}
+
