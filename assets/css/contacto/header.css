@@ -1,10 +1,11 @@
-*,html{font-family:'Times New Roman', Times, serif;
+*,
+html {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
 header p a {
-    width: 100%
-    block-size: 40px;
+    width: 100% block-size: 40px;
     font-size: 30px;
     margin-left: 30px;
 }

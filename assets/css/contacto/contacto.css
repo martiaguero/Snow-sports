@@ -3,15 +3,21 @@
 @import url(/assets/css/contacto/footer.css);
 
 
-*,html{font-family:'Times New Roman', Times, serif;
+*,
+html {
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
 
 
-head img { width: 100px;}
+head img {
+    width: 100px;
+}
 
-body { background-color: #9c27b0;}
+body {
+    background-color: #9c27b0;
+}
 
 
 
@@ -25,9 +31,8 @@ p h1 {
 }
 
 input,
-textarea > input {   
-            width: 500px;
-            box-sizing: border-box;
-            border: 1px solid #000000;
+textarea>input {
+    width: 500px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
 }
-
