@@ -6,57 +6,11 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
 
 body{
     min-height: 1000px;
-
-}
-header{
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 100px;
-    z-index: 1000;
-    transition: 0.6s;
-    background: rgb(24,25,26)
-
-
-}
-
-header.logo{
-    font-weight: 700;
-    color: #000;;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-
-header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-header ul li{
-     list-style: none;
-}
-
-header ul li a{
-   margin: 0 15px;
-   text-decoration: none;
-    color:  #9c27b0;
-   letter-spacing: 2px;
-   font-weight: 400;
 }
 
 .banner{
@@ -70,7 +24,6 @@ header ul li a{
 }
 
 
-
 .banner h2{
  color:#000; 
  font-size: 80px;
@@ -82,6 +35,7 @@ header ul li a{
 .banner h2 span{
     color: #4978ff 
 }
+
 /*estilos para la sección Quiénes somos y Botón.*/
 .sec{
     background: #fff;
