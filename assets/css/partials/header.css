@@ -1,18 +1,18 @@
-header{
+/* header{
     /* position:fixed; */
-    top: 0;
-    left: 0;
+    /* top: 10000; */
+    /* left: 0; 
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 100px;
-    z-index: 1000;
+    /* padding: 40px 100px; 
+    /* z-index: 1000; 
     transition: 0.6s;
-    background: rgb(24,25,26)
+    background: #ffecff
 }
 
-header.logo{
+/* header.logo{
     font-weight: 700;
     color: #000;;
     text-decoration: none;
@@ -20,7 +20,7 @@ header.logo{
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s;
-}
+} 
 
 header ul{
     display: flex;
@@ -36,7 +36,118 @@ header ul li{
 header ul li a{
    margin: 0 15px;
    text-decoration: none;
-   color:  #9c27b0;
+   color:  #77767c;
    letter-spacing: 2px;
    font-weight: 400;
+} */
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background-attachment: fixed;
+    background-size: 100%;
+    background-image:url("/assets/media/images/header.jpg");
+}
+
+main{
+    padding-top: 15%;
+}
+
+.header_container{
+    height: 10%;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid red;
+    position: fixed;
+}
+
+.header_container::backdrop{
+    background-color:black ;
+}
+
+.header_container .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18%;
+}
+
+.header_container .navbar .logo{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.header_container .navbar .marca{
+    font-family: 'Caveat', cursive;
+    text-decoration: none;
+    color: #ffffff;
+    font-size:x-large;
+    
+}
+
+.header_container .navbar .marca:hover{
+    color: whitesmoke;
+}
+
+.header_container .navbar .logo img{
+    width: 7em;
+    cursor: pointer;
+}
+
+.header_container .navbar .menu ul{
+    display: flex;
+}
+
+.header_container .navbar .menu ul li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+.header_container .navbar .menu ul li:hover{
+    color: black;
+    
+}
+
+.header_container .navbar .menu ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    
+}
+
+header_container .navbar .menu ul li a:hover{
+    color: black;
+    background-color: whitesmoke;
+    transition: color 0.7s ease-in-out;
+}
+
+header_container .navbar .menu ul li a:active{
+    background-color: whitesmoke;
+    padding: 3%;
+}
+
+.header_container .navbar .menu ul li a::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background:#ffffff ;
+    transition: width 0.3s ease-in-out;
+}
+
+
+.header_container .navbar .menu ul li a:hover::after{
+    width: 100%;
+    
 }

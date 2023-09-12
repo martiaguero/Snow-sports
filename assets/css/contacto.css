@@ -1,8 +1,11 @@
-*,
-html {
-    font-family: 'Times New Roman', Times, serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+/* 
 .main p {
 
     padding: 1em;
@@ -85,4 +88,4 @@ textarea>input {
     width: 500px;
     box-sizing: border-box;
     border: 1px solid #000000;
-}
+} */
