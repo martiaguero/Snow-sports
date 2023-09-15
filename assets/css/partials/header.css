@@ -62,7 +62,7 @@ main{
 }
 
 .header_container{
-    height: 10%;
+    height: 15%;
     width: 100%;
     background-color: transparent;
     border: 1px solid red;
@@ -84,6 +84,7 @@ main{
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+
 }
 
 .header_container .navbar .marca{
@@ -99,12 +100,15 @@ main{
 }
 
 .header_container .navbar .logo img{
-    width: 7em;
+    width: 4em;
     cursor: pointer;
+margin-top: 15px;
+position: inherit;
 }
 
 .header_container .navbar .menu ul{
     display: flex;
+    margin-top: 20px;
 }
 
 .header_container .navbar .menu ul li{
