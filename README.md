@@ -24,10 +24,6 @@ Sport Snow ofrece en forma de ecommerce ropa deportiva especificamente de invier
 
 26 años, Estudiante de Lic. en sistemas en la UTN y complemento mis herramientas de aprendizaje con el curso de desarrollo Full Stack orientado a Python
 
-#### - Jorge Bartra Corona
-
-26 años, Estudiante de Ing.Mecánica de UNLZ y complemento mis herramientas de aprendizaje con el curso de desarrollo Full Stack orientado a Python, además estudio otros programas como pyhton anaconda. 
-
 #### - Brian Alexis Pellegrini
 
 27 años, Enfermero profesional y estudiante de programacion en full stack.

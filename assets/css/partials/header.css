@@ -1,93 +1,38 @@
-/* header{
-    /* position:fixed; */
-    /* top: 10000; */
-    /* left: 0; 
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* padding: 40px 100px; 
-    /* z-index: 1000; 
-    transition: 0.6s;
-    background: #ffecff
-}
-
-/* header.logo{
-    font-weight: 700;
-    color: #000;;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-} 
-
-header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-header ul li{
-    list-style: none;
-}
-
-header ul li a{
-   margin: 0 15px;
-   text-decoration: none;
-   color:  #77767c;
-   letter-spacing: 2px;
-   font-weight: 400;
-} */
-
 /* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     font-family: 'poppins', sans-serif;
-}
-
-body{
-    background-attachment: fixed;
-    background-size: 100%;
-    background-image:url("/assets/media/images/header.jpg");
-}
-
-main{
-    padding-top: 15%;
+    box-sizing: border-box;
 }
 
 .header_container{
-    height: 15%;
+    /* height: 15%;
     width: 100%;
-    background-color: transparent;
+    background-color: transparent; */
     border: 1px solid red;
-    position: fixed;
 }
 
-.header_container::backdrop{
+header_container::backdrop{
     background-color:black ;
 }
 
 .header_container .navbar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 18%;
+    /* justify-content: flex-start; */
+    /* padding: 0 15%; */
 }
 
-.header_container .navbar .logo{
+header_container .navbar .logo{
     display: flex;
     align-items: flex-end;
     flex-direction: column;
 
 }
 
-.header_container .navbar .marca{
+header_container .navbar .marca{
     font-family: 'Caveat', cursive;
     text-decoration: none;
     color: #ffffff;
@@ -95,25 +40,23 @@ main{
     
 }
 
-.header_container .navbar .marca:hover{
+header_container .navbar .marca:hover{
     color: whitesmoke;
 }
 
 .header_container .navbar .logo img{
-    width: 4em;
+    width: 13em;
     cursor: pointer;
-margin-top: 15px;
-position: inherit;
 }
 
 .header_container .navbar .menu ul{
     display: flex;
-    margin-top: 20px;
+    
 }
 
 .header_container .navbar .menu ul li{
     list-style: none;
-    padding: 0 20px;
+    padding: 0 3%;
 }
 
 .header_container .navbar .menu ul li:hover{
@@ -123,9 +66,8 @@ position: inherit;
 
 .header_container .navbar .menu ul li a{
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none; 
     position: relative;
-    
 }
 
 header_container .navbar .menu ul li a:hover{
