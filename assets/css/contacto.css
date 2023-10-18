@@ -2,92 +2,56 @@
 @import url(/assets/css/partials/header.css);
 @import url(/assets/css/partials/footer.css);
 
+
+
+
+
 *{
     padding: 0;
     margin: 0;
     font-family: 'poppins', sans-serif;
+        
 }
 
-.main p {
-
-    padding: 1em;
-    block-size: auto;
-    border: 3px solid black;
-    border-radius: 1em;
-}
-
-div p {
-
-    border: 3px solid black;
-    margin-top: 20px;
-    padding: 1em;
-    border-radius: 1em;
-    width: 400px;
-}
-
-button {
-    border-radius: 1em;
-    background-color: #9c27b0;
-    border: 2px solid #000000;
+#rombo {
+    width: 200px;
+    height: 100px;
+    
 
 }
 
-form {
-    margin: 0 auto;
-    width: 500px;
-    padding: 1em;
-    border: 3px solid #000000;
-    border-radius: 1em;
-} 
+main div p {
 
-p h1 {
-    margin: auto;
-    width: 500px;
-    padding: 1em;
-    border-radius: 1em;
-    border: 1 px solid black;
+    font-size: 2rem;
+    color: rgb(255, 201, 201);
+    
+    
+}
+main div input{
+
+    border-radius: 1rem;
+    padding: 0.7em;
+    color: white;
+    width: 200px;
+    background-color: black;
+}
+
+main div a button {
+
+    border-radius: 1rem;
+    padding: 0.7em;
+    color: black;
+    width: 200px;
+background-color: rgb(255, 201, 201);
 
 }
 
-input,
-textarea>input {
-    width: 500px;
-    box-sizing: border-box;
-    border: 3px solid #000000;
-    border-radius: 0.3em;
-}
-
-
-
-form section div :nth-child(n6) {
-    border: 1px solid black;
-    border-radius: 0.5 em;
-
-}
-
-
-head img {
-    width: 100px;
-}
 
 body {
-    background-color: #9c27b0;
+    background-color: rgb( 30, 30, 30)
 }
 
+footer {
 
-
-p h1 {
-    margin: auto;
-    width: 500px;
-    padding: 1em;
-    border-radius: 1em;
-    border: 1 px solid black;
-
+    color: white;
 }
-
-input,
-textarea>input {
-    width: 500px;
-    box-sizing: border-box;
-    border: 1px solid #000000;
-} 
