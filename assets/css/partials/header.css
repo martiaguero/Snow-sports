@@ -21,7 +21,7 @@ header_container::backdrop{
 .header_container .navbar{
     display: flex;
     align-items: center;
-    /* justify-content: flex-start; */
+    justify-content:space-evenly;
     /* padding: 0 15%; */
 }
 
@@ -51,7 +51,7 @@ header_container .navbar .marca:hover{
 
 .header_container .navbar .menu ul{
     display: flex;
-    
+    justify-content: space-evenly;
 }
 
 .header_container .navbar .menu ul li{
