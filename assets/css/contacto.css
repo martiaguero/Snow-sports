@@ -10,15 +10,14 @@
     padding: 0;
     margin: 0;
     font-family: 'poppins', sans-serif;
-        
+    
 }
 
 #rombo {
     width: 200px;
     height: 100px;
     background-color: transparent;
-
-}
+    }
 
 main div p {
 
@@ -51,7 +50,8 @@ body {
     background-color: rgb( 30, 30, 30)
 }
 
-footer {
+/* footer {
 
     color: white;
-}
+} */
+

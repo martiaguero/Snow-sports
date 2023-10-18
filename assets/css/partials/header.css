@@ -65,7 +65,7 @@ header_container .navbar .marca:hover{
 }
 
 .header_container .navbar .menu ul li a{
-    color: #ffffff;
+    color: rgb(255, 201, 201);
     text-decoration: none; 
     position: relative;
 }

@@ -7,13 +7,13 @@
     font-family: 'poppins', sans-serif;
 }
 
-/* 
 footer p {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: rgb(30, 30, 30)
     block-size: 30px;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     box-sizing: 10px;
     border-radius: 1em;
-} */
+    margin-top: 10px;    
+    color: rgb(255, 201, 201);
+}
