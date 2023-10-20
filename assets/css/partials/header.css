@@ -8,15 +8,12 @@
 }
 
 .header_container{
-<<<<<<< HEAD
-    background-color: transparent; 
+    /* background-color: transparent;  */
     border: 1px solid red;
-=======
     height: 15%;
     width: 100%;
     background-color: transparent;
     /* border: 1px solid red; */
->>>>>>> d89c4279441aed803902e87578c358e9fae191dc
 }
 
 header_container::backdrop{
