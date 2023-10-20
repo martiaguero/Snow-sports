@@ -1,79 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
- form.form-example {
-  display: table;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-div.form-example {
-  display: table-row;
-}
+    <link rel="icon" href="/assets/media/icons/logo.ico" />
+    <link rel="stylesheet" href="/assets/css/contacto.css" />
 
-label,
-input {
-  display: table-cell;
-  margin-bottom: 10px;
-}
-
-label {
-  padding-right: 10px;
-}
-
-</style>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Section Links -->
-    <link rel="icon" href="/assets/media/icons/logo.ico">
-
-    <link rel="icon" type="image/jpg" href="/assets/media/images/logo.png" sizes="16x16">
-    <link rel="icon" type="image/jpg" href="/assets/media/images/logo.png" sizes="32x32">
-    <link rel="icon" type="image/jpg" href="/assets/media/images/logo.png" sizes="64x64">
-    <!--Section Links -->
-
-    <title>Login</title>
-
-    <h1 style="color: black; background-color: blueviolet;"><p align="center"><img src="/assets/media/images/logo.png" width="5%"><br>
-    Snow-Sports
-    </h1>
-    
-    <hr>
-
-
-</head>
-<body>
-    <!--Header - NavBar -->
+    <title>Log_in</title>
+  </head>
+  <body align="center">
     <header class="header_container">
-        <nav class="navbar">
-          <section class="logo">
-            <a href="/"
-              ><img src="assets/media/icons/logo.ico" alt="logo snow sports"
-            /></a>
-            <!-- <a href="/" class="marca">Sports Snow</a> -->
-          </section>
-  
-          <section class="searchbar"></section>
-  
-          <section class="menu">
-            <ul>
-              <li><a href="/pages/about.html" class="nosotros"> Nosotros </a></li>
-              <li>
-                <a href="/pages/productos.html" class="productos"> Shop </a>
-              </li>
-              <li>
-                <a href="/pages/contacto.html" class="contacto"> Contactanos </a>
-              </li>
-            </ul>
-          </section>
-        </nav>
-      </header>
-     <!--Header - NavBar -->
-</body>
-<hr>
-    <footer > 
-        <br>
-            <p style="text-align: center;">Derechos @2023</p>
-        <br>
-    </footer>
+      <nav class="navbar">
+        <section class="logo">
+          <img src="/assets/media/icons/logo.ico" alt="logo snow sports" />
+        </section>
 
+        <section class="searchbar"></section>
+
+        <section class="menu">
+          <ul>
+            <li>
+              <a href="/index.html" class="marca">Snow Sports</a>
+            </li>
+            <li><a href="/pages/about.html" class="nosotros"> Nosotros </a></li>
+            <li>
+              <a href="/pages/productos.html" class="productos"> Productos </a>
+            </li>
+            <li>
+              <a href="/pages/contacto.html" class="contacto"> Contactenos </a>
+            </li>
+            <li>
+              <!-- <div id="register" class="registrarse">
+                <a id="register" href="#">Registrarse</a>
+              </div> -->
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </header>
+
+    <div align="center">
+      <img id="rombo" src="/assets/media/images/rombo.png" />
+    </div>
+    <br /><br /><br />
+    <main>
+      <div class="contacto" align="center">
+        <p>
+          <strong>Contactenos para más novedades</strong>
+        </p>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <div align="center" class="form-register">
+        <input type="text" name="Correo" id="Correo" required id="Correo"
+        placeholder="Correo electrónico"
+      </div>
+      <br />
+      <br />
+
+      <div align="center">
+        <a href="/pages/login.html" target="_parent">
+          <button>ENVIAR</button>
+        </a>
+      </div>
+
+      <!--         
+        <section>
+          <p>
+            <h1 name="contact" align=center>Contáctenos</h1>
+          </p>
+          <form action="" method="get" class="form-register">
+            
+            <div align=center class="form-register">
+              <input type="text" name="name" id="name" required id="Nombre" placeholder="Nombre" />
+            </div>
+            <br>
+            <div align=center class="form-register">
+              
+              <input type="text" name="name" id="name" required id="Apellido" placeholder="Apellido" />
+            </div>
+            <br>
+            <div align=center class="form-register">
+              <input type="email" name="email" id="email" required id="Email" placeholder="Correo electrónico" />
+            </div>
+                <br>
+                <div align=center class="form-register">
+                  <input type="text" name="Comentarios" id="Comentarios" required id="Comentarios"
+                  placeholder="Mensaje" />
+                </div>
+                <br>
+                
+                <div align=center>
+                  <input type="checkbox" id="Si" name="Si">
+                  <br>
+                  <br>
+                </div>
+                <div align="center" name="agree">Estoy de acuerdo con <a href="/pages/terminos_y_condiciones.html">terminos y
+                  condiciones</a></div>
+                  <br>
+                  <div align=center class="form-register">
+                    <input type="submit" value="Registrar!" />
+                  </div>
+                </form>
+                
+              </section>  -->
+    </main>
+
+    <!--Footer-->
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div align="center">
+      <img id="rombo" src="/assets/media/images/fb_minimalista_2.png" />
+      <img id="rombo" src="/assets/media/images/ig_minimalista_2.png" />
+      <img id="rombo" src="/assets/media/images/pinterest_minimalista_2.png" />
+      <img id="rombo" src="/assets/media/images/wsp_minimalista_2.png" />
+    </div>
+    <footer>
+      <br />
+      <br />
+      <br />
+      <p style="text-align: center">
+        © SnowSports Shop By Brai Isma Martu Manu ®
+      </p>
+      <br />
+    </footer>
+    <!--     
+     <button id="login">LogIn</button> 
+    <div id="register" class="formulario">
+      <h2>Inicia Sesion</h2>
+      <form method="post">
+        <div class="username">
+          <input type="text" required />
+          <label>Contraseña</label>
+        </div>
+        <div class="recordar">¿Olvido su contraseña?</div>
+        <input type="submit" value="iniciar" />
+      </div>
+       </form> -->
+    <!--Footer-->
+  </body>
 </html>
