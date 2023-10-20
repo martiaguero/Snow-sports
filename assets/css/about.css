@@ -116,7 +116,7 @@ p{
   text-transform: uppercase;
   font-weight: 700;
 }
-/*Estilos para sección* con márgenes negativos*/
+/*Estilos para sección* con márgenes negativos
 
 .stats{
     background: #000;
@@ -149,7 +149,7 @@ p{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-/*Estilo para mostrar y ocultar una caja utilizando opacity*/
+/* Estilo para mostrar y ocultar una caja utilizando opacity*/
 
 .teamBx{
   position: relative;

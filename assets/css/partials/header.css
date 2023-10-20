@@ -8,9 +8,7 @@
 }
 
 .header_container{
-    /* height: 15%;
-    width: 100%;
-    background-color: transparent; */
+    background-color: transparent; 
     border: 1px solid red;
 }
 
@@ -21,7 +19,7 @@ header_container::backdrop{
 .header_container .navbar{
     display: flex;
     align-items: center;
-    justify-content:space-evenly;
+    justify-content:space-around;
     /* padding: 0 15%; */
 }
 
