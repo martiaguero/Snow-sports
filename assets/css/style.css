@@ -2,7 +2,7 @@
 /*colores a Utilizar*/
 :root {
     --clr-main: black;
-    --clr-main-light: #0a0911;
+    --clr-main-light: #12111b;
     --clr-rose: rgb(255, 201, 201);
     --clr-gray: rgb(143, 140, 140);
     --clr-red: red;
@@ -78,7 +78,7 @@ body{
 .header .btn button{
     margin-left: 20px;     
     font-weight: 700;
-    color: #1b3039;
+    color: var(--clr-main-light);
     padding: 9px 25px;
     background: var(--clr-blanco);
     border: none;
@@ -133,7 +133,7 @@ aside {
 .logo{
     font-weight: 400;
     font-size: 1.3rem;
-    color: white;
+    color: var(--clr-blanco);
 }
 .menu {
     display: flex;
@@ -222,7 +222,7 @@ aside {
 /*fin icono*/
 
 .texto-footer {
-    color: var(--clr-main-light);
+    color: var(--clr-rose);
     font-size: .95rem;
 }
 
