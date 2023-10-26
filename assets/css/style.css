@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700;6..12,800&family=Nunito:wght@400;700;800&family=Roboto:wght@100;900&display=swap');
+/*colores a Utilizar*/
+:root {
+    --clr-main: black;
+    --clr-main-light: #0a0911;
+    --clr-rose: rgb(255, 201, 201);
+    --clr-gray: rgb(143, 140, 140);
+    --clr-red: red;
+    --clr-sombra:rgb(248, 106, 106);
+    --clr-blanco:rgb(255, 255, 255);
+}
+
+/*barra de navegacion*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: var(--clr-main);
+}
+.header{
+    background-color: var(--clr-main-light);
+    display: flex;
+    justify-content: space-between;         
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+    border-radius: 5%;
+    overflow: hidden
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    border-radius: 40%
+}
+
+.header .logo .img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: var(--clr-blanco);
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: var(--clr-rose);
+}
+
+
+.header .btn button{
+    margin-left: 20px;     
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: var(--clr-blanco);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .btn button:hover{
+    background-color: var(--clr-main);
+    color: var(--clr-rose);
+    transform: scale(1.1);
+}
+
+.header .search-container {
+    margin-right: auto; 
+}
+
+/* fin barra de navegacion*/
+
+h1,h2,h3,h4,h5,h6,p,a,input,textarea {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;/*saca los circulitos que tiene*/
+}
+
+a {
+    text-decoration: none;/*reset de todos los links , saca el subrayado por defecto */
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: var(--clr-main);
+}
+
+aside {
+    padding: 2rem;
+    padding-right: 0;
+    color: var(--clr-rose);
+    position: sticky;
+    top: 0;
+    height: 120vh;/*ojo con el height*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.logo{
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: white;
+}
+.menu {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: .5rem;
+}
+
+/*botones(lo que esta a la izquierda)*/
+.boton-menu{
+    background-color: transparent;
+    border: 0;
+    color: var(--clr-rose);
+    font-size: 0.75rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 0.65rem;
+    width: 100%;
+    transition: background-color 0.3s ease; 
+}
+
+.boton-menu.active{
+    background-color: var(--clr-rose);
+    color: var(--clr-main);
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+
+.boton-menu i {
+    font-size: 1.2rem;
+}
+
+.boton-menu.active::before{
+    content:'';
+    position: absolute;
+    width: 1rem; 
+    height: 2rem;
+    bottom: 100%;
+    right: 0;
+    background-color: transparent;
+    border-bottom-right-radius: .5rem;
+    box-shadow: 0 1rem 0 var(--clr-rose);
+
+}
+.boton-menu.active::after{
+    content:'';
+    position: absolute;
+    width: 1rem; 
+    height: 2rem;
+    top: 100%;
+    right: 0;
+    background-color: transparent;
+    border-top-right-radius: .5rem;
+    box-shadow: 0 -1rem 0 var(--clr-rose);
+
+}
+/*fin botones*/
+
+/*icono*/
+.bi-hand-index-thumb-fill,
+.bi-hand-index-thumb{
+    transform: rotateZ(90deg);
+}
+
+.boton-carrito{
+    margin-top: 2rem;
+}
+
+.Numero{
+    background-color: var(--clr-rose);
+    color: var(--clr-main);
+    padding: 0 .25rem;
+    border-radius: .25rem;
+}
+
+.boton-carrito-active .Numero{
+    background-color: var(--clr-main);
+    color: var(--clr-rose);
+}
+
+/*fin icono*/
+
+.texto-footer {
+    color: var(--clr-main-light);
+    font-size: .95rem;
+}
+
+main{
+    background-color: var(--clr-rose);
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 2rem;
+
+}
+
+.titulo-principal{
+    color: var(--clr-main);
+    margin-bottom: 2rem;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+.producto-imagen {
+    max-width: 100%;
+    border-radius: 10rem;
+}
+
+.producto-detalles{
+    background-color: var(--clr-main-light);
+    color: var(--clr-blanco);
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.producto-titulo{
+    font-size: 1rem;
+}
+
+.producto-agregar{
+    border: 0;
+    background-color: var(--clr-rose);
+    color: var(--clr-main);
+    padding: .4rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;/*cambia el cursor cuando selecciona*/
+    border: 2px solid var(--clr-rose);
+    transition: background-color .2s, color .2s;
+
+}
+
+.producto-agregar:hover{/*al seleccionar en el boton tiene el mimo color que el fondo*/
+    background-color: var(--clr-main);
+    color: var(--clr-rose);
+    
+    
+}
+
+/*carrito */
+
+.contenedor-carrito{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carrito-vacio,
+.carrito-comprado{
+    color: var(--clr-main);
+}
+
+.carrito-productos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.carrito-producto {
+    display: flex;
+    justify-content: space-between; /*para que se separe*/
+    align-items: center;
+    background-color: var(--clr-gray);
+    color: var(--clr-main);
+    padding: .5rem;
+    padding-right: 1.5rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto-imagen{
+    width: 4rem;
+    border-radius: 1rem;
+}
+
+.carrito-producto small{ /*letra*/
+    font-size: .75rem;
+}
+
+.carrito-producto-eliminar{
+    border: 0;
+    background-color: transparent;
+    color: var(--clr-red);
+    cursor: pointer;
+}
+
+.carrito-acciones{
+    display: flex;
+    justify-content: space-between; /*para que se separen los textos de carrito abajo*/
+}
+
+.carrito-acciones-vaciar{
+    border: 0;
+    background-color: var(--clr-gray);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--clr-main);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.carrito-acciones-derecha{
+    display: flex;/*para que queden al aldo */
+}
+.carrito-acciones-total{
+    display: flex;
+    background-color: var(--clr-gray);
+    padding: 1rem;
+    color: var(--clr-main);
+    text-transform: uppercase;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    gap: 1rem;
+}
+
+.carrito-acciones-comprar{
+    border: 0;
+    background-color: var(--clr-main);
+    padding: 1rem;
+    color: var(--clr-rose);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.disabled{
+    display: none;
+}
+
+/*REDES*/
+
+.fondo-contacto {
+    color: var(--clr-blanco);
+    background-color: var(--clr-main);
+}
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid var(--clr-rose);
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+
+}
+
+.iconos-redes-sociales i {
+    color: var(--clr-blanco);
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: var(--clr-sombra);
+    border: 2pxsolid var(--clr-rose);
+}
+
+.iconos-redes-sociales a:hover i {
+    color: var(--clr-blanco);
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: var(--clr-main);
+    padding: 20px;
+
+}
+/*fin redes*/
+
+/*barra de busqueda*/
+.search-container {
+    display: flex;
+    margin-bottom: -20px;
+}
+
+#searchInput {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid var(--clr-gray); /* Borde gris */
+    border-radius: 5px 0 0 5px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: var(--clr-rose);
+    color: var(--clr-main-light);
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--clr-gray);
+}
+
