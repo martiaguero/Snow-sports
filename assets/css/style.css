@@ -35,16 +35,15 @@ body{
 
 .header .logo{
     cursor: pointer;
-    margin-right: auto;
     border-radius: 5%;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .header .logo img{
-    height: 70px;
-    width: auto;
+    height: 100px;
+    width: 170px;
     transition: all 0.3s;
-    border-radius: 40%
+    border-radius: 10%;
 }
 
 .header .logo .img:hover{
@@ -53,6 +52,7 @@ body{
 
 .header .nav-links{
     list-style: none;
+    margin-right: auto;
 }
 
 .header .nav-links li{
