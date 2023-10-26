@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url(/assets/css/partials/header.css);
+@import url(/assets/css/partials/footer.css);
+
+/* @import url(/assets/css/partials/header.css); */
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+#rombo {
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    }
+
+main div p {
+
+    font-size: 2rem;
+    color: rgb(255, 201, 201);
+    
+    
+}
+main div input{
+
+    border-radius: 1rem;
+    padding: 0.7em;
+    color: white;
+    width: 200px;
+    background-color: black;
+}
+
+main div a button {
+
+    border-radius: 1rem;
+    padding: 0.7em;
+    color: black;
+    width: 200px;
+background-color: rgb(255, 201, 201);
+
+}
+
+
+body {
+    background-color: rgb( 30, 30, 30)
+}
+
+/* footer {
+
+    color: white;
+} */
+
