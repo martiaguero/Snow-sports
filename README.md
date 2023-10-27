@@ -28,7 +28,9 @@ Sport Snow ofrece en forma de ecommerce ropa deportiva especificamente de invier
 
 27 años, Enfermero profesional y estudiante de programacion en full stack.
 
+#### - Miranda Andres Ismael
 
+30 años, Maestro Mayor de Obras, estudiante de Analista Programador Universitario en la UNJu y estudiante en programacion en FullStack Python.
 ____________________________________________________________________________________________________
 
 #### - Conexión y Comandos de Terminal
