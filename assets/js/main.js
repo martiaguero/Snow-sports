@@ -1,4 +1,3 @@
-//CALZADOS
 const productos = [
     //hombres
     {
