@@ -1,5 +1,5 @@
 const productos = [
-    //hombres
+    //Categoria hombres
     {
         id:"campera-01",
         titulo:"Campera LARS",
@@ -60,8 +60,8 @@ const productos = [
         },
         precio:22000
     },
-//fin hombre
-//mujeres
+//fin Categoria hombre
+//Categoria mujeres
 {
     id:"campera-01",
     titulo:"Campera ANE",
@@ -122,8 +122,8 @@ const productos = [
     },
     precio:28000
 },
-//fin mujeres
-//niños
+//fin Categoria mujeres
+//Categoria niños
 {
     id:"campera-01",
     titulo:"Campera VINCE",
@@ -164,8 +164,8 @@ const productos = [
     },
     precio:35000
 },
-//fin de niños
-//campig
+//fin de Categoria niños
+//Categoria campig
 {
     id:"camping-01",
     titulo:"Carpa DARUMA 5P",
@@ -206,8 +206,8 @@ const productos = [
     },
     precio:136527
 },
-//fin de camping
-//esqui y snow
+//fin de Categoria camping
+//Categoria esqui y snow
 {
     id:"esqui snowboard-01",
     titulo:"Fijaciones Snowboard Burton",
@@ -288,14 +288,14 @@ const productos = [
     },
     precio:78490
 },
-//fin de esqui y snow
+//fin de Categoria esqui y snow
 
 ];
 
 const contenedorProductos = document.querySelector("#contenedor-productos");/*trae todos los productos */
 const botonesCategorias = document.querySelectorAll(".boton-categoria");/*trae todos los botones de categoria */
 const tituloPrincipal = document.querySelector("#titulo-principal");/*trae los titulos de cada categoria */
-let botonesAgregar = document.querySelectorAll(".producto-agregar");
+let botonesAgregar = document.querySelectorAll(".producto-agregar");/**selecciona los productos */
 const numero = document.querySelector("#numero")
 
 
@@ -306,12 +306,12 @@ function cargarProductos(productosElegidos){
     productosElegidos.forEach(producto =>{/*ojo productosElegidos escribir bien sino no seleccionara , antes estaba escrito productos solo */
 
         const div = document.createElement("div");/*contenedor de cada producto*/
-        div.classList.add("producto");/*`acento grave*/
+        div.classList.add("producto");/* `acento grave, ojo importante eso*/
         div.innerHTML = `
         <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
         <div class="producto-detalles">
             <h3 class="producto-titulo">${producto.titulo}</h3>
-            <p class="producto-precio">${producto.precio}</p>
+            <p class="producto-precio">$${producto.precio}</p>
             <button class="producto-agregar" id="${producto.id}">Agregar</button>
         </div>  
         `;
@@ -345,7 +345,7 @@ botonesCategorias.forEach(boton =>{
 
 
     })
-}) /* sobrea al seleccionar alguna categoria */
+}) 
 
 //buscar
 function buscarProductos() {
@@ -377,7 +377,7 @@ function actualizarBotonesAgregar() { /**para cargar productos */
 let productosEnCarrito;
 
 let productosEnCarritoLS = localStorage.getItem("productos-en-carrito");
-//const productosEnCarritoLS = JSON.parse(localStorage.getItem("productos-en-carrito"));//ESTO TRAIGO CUANDO TERMINO EL CARRITO.JS
+
 
 if (productosEnCarritoLS) {
     productosEnCarrito = JSON.parse(productosEnCarritoLS);
