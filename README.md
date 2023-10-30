@@ -34,7 +34,7 @@ Sport Snow ofrece en forma de ecommerce ropa deportiva especificamente de invier
 
 ### - Manuel Abruzzese
 
-36 años, Empleado de comercio, y estudiante de programación Full Stack Python en programa Codo a Codo Argentina. 
+26 años, Empleado de comercio, y estudiante de programación Full Stack Python en programa Codo a Codo Argentina. 
 ____________________________________________________________________________________________________
 
 #### - Conexión y Comandos de Terminal
