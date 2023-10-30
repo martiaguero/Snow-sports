@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url(/assets/css/partials/header.css);
+@import url(/assets/css/partials/footer.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+#rombo {
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    }    
+
+main div p {
+    font-size: 2em;
+    color: rgb(30, 30, 30);  
+}
+
+body {
+    background-color: rgb( 30, 30, 30)
+}
+
+.form-register {
+    width: 300px;
+    background: rgba(255, 201, 201, 0.7);
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-family: 'poppins', sans-serif;
+    color: black;
+
+}
+.controls {
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    padding: 4.5px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(255, 201, 201);
+    font-family: 'popins', sans-serif;
+    font-size: 15px;
+}
+.div p {
+    font-size: 10px;
+}
