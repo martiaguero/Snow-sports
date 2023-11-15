@@ -84,7 +84,7 @@ header_container .navbar .menu ul li a:active{
 }
 
 .header_container .navbar .menu ul li a::after{
-    position: absolute;
+    position: relative;
     content: "";
     left: 0;
     bottom: 0;

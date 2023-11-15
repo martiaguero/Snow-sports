@@ -2,9 +2,6 @@
 @import url(/assets/css/partials/header.css);
 @import url(/assets/css/partials/footer.css);
 
-/* @import url(/assets/css/partials/header.css); */
-
-
 
 *{
     padding: 0;
@@ -50,8 +47,4 @@ body {
     background-color: rgb( 30, 30, 30)
 }
 
-/* footer {
-
-    color: white;
-} */
 
