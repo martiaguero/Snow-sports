@@ -1,223 +1,356 @@
-/*Imports*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Outfit:wght@200;300;400;500;600;700;800;900&display=swap');
-@import url(/assets/css/partials/header.css);
-@import url(/assets/css/partials/footer.css);
-
-/*Creación del Banner y el menu*/
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
-}
-
-
-.banner{
-    width: 100vw;
-    min-height: 100vh;
-    background: url(/assets/media/images/alpessuizo.png);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-}
-
-
-.banner h2{
- color:#000; 
- font-size: 80px;
- text-transform: uppercase;
- text-align: center;
- line-height: 1em;
-}
-
-.banner h2 span{
-    color: #4978ff 
-}
-
-/*estilos para la sección Quiénes somos y Botón.*/
-.sec{
-    background: #fff;
-    padding: 100px;
-    min-width: 100vh;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-
-.sec .content{
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
-.mxw800p{
-    max-width: 800%;
-    margin: 0 auto;
-}
-
-.btn{
-    display: inline-block;
-    background: #000;
-    color: #9c27b0;
-    padding: 10px 30px;
-    text-decoration: none;
-
-}
-
-h3{
-    font-size: 40px;
-    font-weight: 200;
-    margin-bottom: 10px;
-
-}
-
-p{
-    font-size: 18px ;
-    font-weight: 300;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-
-}
-
-/* ----------------------ESTILOS PARA LOS SERVICIOS DE NUESTRA EMPRESA ---------------------*/
-
-.services{
+/*Barra principal*/
+.navbar{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 30px;
-    max-width: 100%;
-    margin-top: 40px;
+    grid-template-columns: 3fr 1.2fr;
+    background-color: var(--clr-main); 
 }
 
-.services .box{
-    width: 300px;
-    margin: 0 auto;
-    background:#9c27b0;;
-    padding: 20px;
-    box-shadow: 0px 20px 25px rgb(0,0,0.5);
-
-}
-
-
-.services .box .iconBx{
-    margin-top: 25px;
-}
-
-.services .box .iconBx img{
-   max-width: 70px;
-   margin-bottom: 15px;
-}
-
-.services .box h2{
-  font-size: 18px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-/*Estilos para sección* con márgenes negativos
-
-.stats{
-    background: #000;
-    padding-top: 250px;
-    margin-top: -250px;
-}
-
-.stats h3,
-.stats p 
-{
-    color:  #9c27b0;
-}
-
-.statsBox{
-      display: grid;
-      grid-template-columns: auto auto auto auto;
-      grid-gap: 20px;
-      max-width: 100%;
-}
-
-.statsBox h2{
-    color:  #9c27b0;
-    font-size: 36px;
-}
-
-.statsBox h4{
-    color:  #9c27b0;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-/* Estilo para mostrar y ocultar una caja utilizando opacity*/
-
-.teamBx{
-  position: relative;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap: 20px;
-  max-width: 100%;
-  margin-top: 40px;
-
-}
-
-.teamBx .member{
-    position: relative;
-    background: #000;
-    min-height: 300px;
-    width: 250px;
-    margin: 0  auto;
-    display: flex;
-    justify-content: center;
+.navbar-collapse{
     align-items: center;
+    justify-content: space-between;
 }
 
-.teamBx .member .imgBx{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+
+/*estilos generales*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
-.teamBx  .member .imgBx img{
-    position: absolute;
-    top: 0;
-    left: 0;
+h1{
+    font-size: 2.5rem;
+
+}
+
+
+.imagen{
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
-.teamBx .member .details{
+.texto-centrado {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 55px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2em;
+}
+
+.banner h2 span {
+    color: #4978ff;
+}
+
+
+
+.principal-1 {
+    padding: 3rem;
+
+}
+
+.principal-1 h2 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+.seccion-oscura {
+    color: white;
+    background-color: black;
+}
+
+
+.seccion-color1 {
+    color: rgb(8, 7, 7);
+    background-color: rgb(255, 201, 201);
+}
+
+.seccion-color2 {
+    color: rgb(8, 7, 7);
+    background-color: #e0d6da;
+}
+
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #2b2828
+
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+}
+
+.texto-negro {
+    color: black;
+}
+
+.texto-blanco {
+    color: white;
+}
+
+.quiénes-somos {
+    height: 500px;
+    padding: 10px;
+    
+}
+
+.quiénes-somos .contenedor { 
+    max-width: 600px;
+    text-align: center;
+}
+
+/*descripcion*/
+.descripcion {
+    padding: 40px 40px 60px 40px;
+}
+
+.descripcion .columna { 
+    padding: 20px;
+    border: 2px solid #0000004d;
+    background-color: rgb(32, 196, 155);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+    transition: all 0.2s ease-in; 
+}
+
+.descripcion .columna:hover { 
+    color: white;
+    background-color: #1b1b32;
+}
+
+.ventas {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.innovador {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.diseños-ecologicos {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+
+/*testimonios*/
+
+.testimonios {
+    padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel { /*ajusta las imagenes del efecto carrucel*/
+    max-width: 800px;
+}
+
+.carousel-item { /* con esto tendra una altura fija del efecto carrusel (ojo)*/
+    height: 500px;
+}
+
+.carousel-item .container {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background: #000;
-    transition: 0.2s;
-    opacity: 0;
+    justify-content: center;
 }
 
-.teamBx .member .details:hover{
-    opacity: 1;
+.testimonios-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
 }
 
-.teamBx .member .details  h2{
-   color:   #9c27b0;
-   text-transform: uppercase;
-   font-size: 20px;
-   letter-spacing: 1px;
+.testimonios-texto {
+    max-width: 70%;
+    font-size: 20px;
+    text-align: center;
 }
 
-.teamBx .member .details  h2 span{
-    display: block;
-    font-size: 12px;
-    font-weight: 300;
+.testimonios-info {
+    font-weight: bold;
+    text-align: center;
+}
+
+.testimonios-footer .cliente {
+    font-size: 1.2rem;
+}
+
+.testimonios-info .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+}
+
+/*   contacto    */
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+
+}
+.contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: rgb(17, 18, 19);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px rgb(255, 201, 201);
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover {
+    background-color: rgb(255, 201, 201);
+    color: black;
+}
+
+.contacto button i {
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+    color: black;
+}
+
+.texto-de-miinfo {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
 
 }
 
+/*redes*/
+
+.footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+
+}
+
+.iconos-redes-sociales i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: rgb(255, 201, 201);
+    border: 2pxsolid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i {
+    color: black;
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+
+}
+
+@media screen and (min-width: 700px){ 
+    .principal-inferior-imagen{
+        max-width: 600px;
+    }
+    
+}
+
+@media screen and (min-width: 300px) {
+    .overlay p {
+        font-size: 18px;
+    }
+    .overlay i {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .testimonios-imagen {
+        height: 120px;
+        width: 120px;
+    }
+    .testimonios-texto {
+        font-size: 18px;
+    }
+}
